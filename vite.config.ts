@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 export default defineConfig({
+  base: '/permapost-bounty/',
   plugins: [react()],
   resolve: {
     alias: {
