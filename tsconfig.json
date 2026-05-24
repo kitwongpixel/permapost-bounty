@@ -9,7 +9,13 @@
     "noEmit": true,
     "skipLibCheck": true,
     "isolatedModules": true,
-    "types": ["vite/client"]
+    "types": ["vite/client"],
+    "baseUrl": ".",
+    "paths": {
+      "@kitwongpixel/keplr-chain-button": [
+        "packages/keplr-chain-button/src/index.ts"
+      ]
+    }
   },
-  "include": ["src"]
+  "include": ["src", "packages/keplr-chain-button/src"]
 }
