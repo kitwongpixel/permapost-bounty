@@ -1,8 +1,21 @@
 {
   "name": "@kitwongpixel/keplr-chain-button",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kitwongpixel/permapost-bounty.git",
+    "directory": "packages/keplr-chain-button"
+  },
+  "keywords": [
+    "keplr",
+    "cosmos",
+    "nillion",
+    "react",
+    "wallet"
+  ],
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -13,7 +26,8 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.build.json"
