@@ -1,14 +1,19 @@
 {
-  "name": "permapost",
+  "name": "nillion-keplr-demo",
   "private": true,
   "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "npm run build:package && vite build",
+    "build:package": "npm run build --workspace @kitwongpixel/keplr-chain-button",
+    "check": "tsc --noEmit && tsc --noEmit -p packages/keplr-chain-button/tsconfig.json",
     "preview": "vite preview"
   },
   "dependencies": {
-    "arweave": "^1.15.5",
+    "@kitwongpixel/keplr-chain-button": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
